@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 转化为css3盒子模型，后面好计算，防止padding撑大盒子 */
+div {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 50px;
+}
+
+header {
+    display: block;
+    width: 10rem;
+    margin: .5rem auto;
+}
+
+header h1 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+header a {
+    display: block;
+    width: 2rem;
+    height: .8rem;
+    margin: .2rem auto;
+    background-color: #8f7a66;
+
+    color: white;
+    text-align: center;
+    line-height: .8rem;
+    text-decoration: none;
+    font-size: .4rem;
+    border-radius: .12rem;
+}
+
+header a:hover {
+    background-color: #9f8b77;
+}
+
+header p {
+    font-size: .5rem;
+    text-align: center;
+}
+
+#grid-container {
+    position: relative;
+
+    width: 10rem;
+    height: 10rem;
+    margin: .4rem auto;
+    padding: .4rem;
+    background-color: #BBADA0;
+    border-radius: .2rem;
+}
+
+.grid-cell,
+.num-cell {
+    position: absolute;
+    font-size: .8rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.grid-cell {
+    background-color: #CCC0B3;
+    width: 2rem;
+    height: 2rem;
+}
